@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.Variables
+
+
+        // var ==> Global ==> accessible throughout the program
+        // let ==> Local ==> accessible inside a block
+        // const ==> constant ==> it have a single line scope.Global
+
+
+        // var x=20;
+        // var y=30;
+        // {
+        //     var x=100;
+        //     var z=x+y; //130
+        //     alert(z);
+        // }
+        // var z=x+y; //130
+        // document.write(z);
+
+
+        // var x=20;
+        // var y=30;
+        // {
+        //     let x=100;
+        //     var z=x+y; // 130
+        //     alert(z);
+        // }
+        // var z=x+y; // 50
+        // document.write(z);
+
+
+        // {
+        //     const z=100;
+        //     // z=200;
+        //     alert(z);
+        // }
+
+
+        // 2.Datatypes ==> primitive and Non-primitive
+
+
+        // String ==> include characters ==> ' ', " ", ` `[Template literals]
+        // Number ==> whole numbers and decimals
+        // Boolean ==> true | false
+        // null ==> Empty[valid value]
+        // undefined ==> If you have not assigned the value.
+
+
+        // Numbers
+        // let x=5;
+        // let y=3.6
+        // document.write(x+"<br>");
+        // document.write(y);
+
+
+        // String
+        // let s1="Hello";
+        // let s2='Hi';
+        // let s3=`It is a String`;
+        // document.write(s3);
+
+
+        // Boolean
+        // let fact1=true;
+        // let fact2=false;
+        // document.write(fact1);
+        // document.write("<br>");
+        // document.write(fact2);
+
+
+        // Exponential
+        // let pos=296e3;
+        // let neg=34e-3;
+        // document.write(pos);
+        // document.write("<br>");
+        // document.write(neg);
+
+
+        // 3.Operators ==> Arithmetic, Comparision, Logical, Bitwise, Assignmnet, Conditional
+
+
+        // Arithmetic Operators
+        // var a=20;
+        // var b=10;
+        // document.write(a+b +"<br>");
+        // document.write(a-b +"<br>");
+        // document.write(a*b +"<br>");
+        // document.write(a/b +"<br>");
+        // document.write(a%b +"<br>");
+        // a++;
+        // b--;
+        // document.write(a+"<br>");
+        // document.write(b+"<br>");
+        // ++b;
+        // --a;
+        // document.write(a+"<br>");
+        // document.write(b+"<br>");
+
+
+        // Comparsion Operators
+        // var a=20;
+        // var b=10;
+        // document.write(a==b +"<br>");
+        // document.write("<br>")
+        // document.write(a>b +"<br>");
+        // document.write("<br>")
+        // document.write(a<b +"<br>");
+        // document.write("<br>")
+        // document.write(a<=b +"<br>");
+        // document.write("<br>")
+        // document.write(a>=b +"<br>");
+        // document.write("<br>")
+        // document.write(a!=b +"<br>");
+
+
+        // Logical Operators
+        // let a=true;
+        // let b=false;
+        // document.write(a&&b);
+        // document.write("<br>")
+        // document.write(a||b);
+        // document.write("<br>")
+        // document.write(!(a&&b));
+
+
+        // Bitwise Operators
+        // let a=5;
+        // let b=2;
+        // let line="<br>";
+        // document.write(a&b);
+        // document.write(line);
+        // document.write(a|b);
+        // document.write(line);
+        // document.write(a^b);
+        // document.write(line);
+        // document.write(~a);
+        // document.write(line);
+        // document.write(a>>2);
+        // document.write(line);
+        // document.write(a<<2);
+
+
+        // Assignment Operators
+        // let a=10;
+        // let b=20;
+        // let line="<br>";
+        // document.write(a+=b);
+        // document.write(line);
+        // document.write(a-=b);
+        // document.write(line);
+        // document.write(a*=b);
+        // document.write(line);
+        // document.write(a/=b);
+        // document.write(line);
+        // document.write(a%=b);
+
+
+        // Conditional Operators
+        // let a=20;
+        // let b=30;
+        // document.write((a>b)?a:b);
+       
+        // 4.Conditional Statements ==> if, if else, else-if, nested if, switch
+
+
+        // let x=2;
+        // let y=30;
+        // function f1(){
+        //     if(x<y){
+        //     document.getElementById('i1').innerText="x is smaller";
+        // }
+        // }
+
+
+        // if(x>y){
+        //     console.log("x is greater");
+        // }
+        // else{
+        //     console.log("Y is greater");
+        // }
+
+
+        // if(x>y){
+        //     console.log("x is greater");
+        // }
+        // else if(x==y){
+        //     documnet.write("x is equals to y");
+        // }
+        // else{
+        //     console.log("Y is greater");
+        // }
+
+
+        // var grade='A';
+        // switch(grade){
+        //     case 'A': console.log("Topper");
+        //         break;
+        //     case 'B': console.log("Average");
+        //     case 'C': console.log("Below Average");
+        // }
+
+
+        // 5.Looping Statements ==> for,while,do-while,for-in
+
+
+        // var count=0;
+        // for(count=0;count<10;count++){
+        //     console.log(count);
+        // }
+
+
+        // while(count<5){
+        //     console.log(count);
+        //     count++;
+        // }
+
+
+        // 6.Loop Control Statements ==> break; continue
+
+
+        // var x=1;
+        // while(x<5){
+        //     if(x==2){
+        //         break;
+        //     }
+        //     document.write(x);
+        //     x++;
+        // }
+
+
+        // var x=1;
+        // while(x<5){
+        //     if(x==2){
+        //         continue;
+        //     }
+        //     document.write(x);
+        //     x++;
+        // }
+       
+        // 7.Functions ==> without arguments, with arguments, with return value, as a variable, Arrow function
+
+
+        // function one(){
+        //     document.write("Fucnction without parameters");
+        // }
+
+
+        // function two(number){
+        //     document.write("Square= "+number*number);
+        // }
+
+
+        // function three(){
+        //     return "Function with return value";
+        // }
+        // document.write(three());
+
+
+        // function f1(){
+        //     console.log("Hello world")
+        // }
+
+
+        // function f2(){
+        //     document.getElementById('i1').innerHTML="Hello world";
+        //     console.log(f1());  
+        // }
+
+
+        // function f1(){
+        //     console.log("Hello world")
+        //     return "function inside a function"
+        // }
+
+
+        // function f2(){
+        //     document.getElementById('i1').innerHTML="Hello world";
+        //     console.log(f1());  
+        // }
+
+
+        // var d3=function(){
+        //     alert("Hello");
+        // }
+
+
+        // // var d4=()=>{
+        // //     alert("welcome");
+        // // }
+
+
+        // var d4=()=> alert("welcome");
+
+
+        // var d5=function(x){
+        //     alert(x);
+        // }
+
+
+        // var d6=(y)=>alert(y);
+
+
+        // 8.Classes ==> Declaring, Accessing , Constructor
+
+
+        // class A{
+        //     x=10;
+        //     y=4;
+        //     abc(){
+        //         console.log("Welcome to the JS classes");
+        //     }
+        // }
+
+
+        // const obj=new A();
+        // console.log(obj.x);
+        // console.log(obj.y);
+        // obj.abc();
+
+
+        // class C{
+        //     constructor(one,two){
+        //         this.one=one;
+        //         this.two=two;
+        //     }
+        //     run(){
+        //         console.log(this.one);
+        //         console.log(this.two);
+        //     }
+        // }
+
+
+        // const ob=new C(10,'Hello');
+        // ob.run();
+
+
+       
+    </script>
+    <!-- <p id="i1"></p> -->
+    <!-- <button onclick="f1()">Change</button> -->
+    <!-- <button onclick="one()">One</button>
+    <button onclick="two(5)">Two</button> -->
+    <!-- <button onclick="f1()">Button1</button> <br>
+    <button onclick="f2()">Button2</button> -->
+    <!-- <button onclick="d3()">As variable</button> <br>
+    <button onclick="d4()">Arrow</button> -->
+    <!-- <button onclick="d5('Valid')"> As variable with parameter</button> <br>
+    <button onclick="d6('Valid Arrow')"> Arrow with parameter</button> -->
+</body>
+</html>
+
